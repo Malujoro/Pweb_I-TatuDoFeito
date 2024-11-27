@@ -1,0 +1,2 @@
+inicialize com npx tailwindcss -i ./i
+nput.css -o ./output.css --watch
