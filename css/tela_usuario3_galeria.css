@@ -62,7 +62,7 @@ body {
     gap: 15px;
     margin-bottom: 10px;
     border: 1px solid #D9D9D9; /* Adiciona borda */
-    border-radius: 8px; /* Suaviza os cantos */
+    border-radius: 20px; /* Suaviza os cantos */
     padding: 10px; /* Espaçamento interno */
     background-color: #F7F7F7; /* Cor de fundo leve */
 }
@@ -79,14 +79,19 @@ body {
 .profile-details {
     margin-top: 10px;
     border: 1px solid #D9D9D9; /* Adiciona borda */
-    border-radius: 8px; /* Suaviza os cantos */
+    border-radius: 20px; /* Suaviza os cantos */
     padding: 25px; /* Espaçamento interno */
     background-color: #F7F7F7; /* Cor de fundo leve */
 }
 
 .details-title {
+    border: 1px solid #D9D9D9; /* Adiciona borda */
+    border-radius: 20px; /* Suaviza os cantos */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #6f9e63; /* Cor de fundo leve */
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
     margin-bottom: 8px;
 }
 
@@ -97,6 +102,7 @@ body {
     gap: 10px;
     margin-top: 10px;
 }
+
 
 .action-button {
     background: #D9D9D9;
