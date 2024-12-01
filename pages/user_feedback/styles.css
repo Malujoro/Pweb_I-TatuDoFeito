@@ -49,10 +49,8 @@ body {
 
 /* Div principal com borda */
 .profile-card {
- 
     border-radius: 10px;
     padding: 10px;
-   
 }
 
 /* Div superior: Foto, nome e localização com altura reduzida */
@@ -103,7 +101,6 @@ body {
     margin-top: 10px;
 }
 
-
 .action-button {
     background: #D9D9D9;
     border: none;
@@ -115,26 +112,137 @@ body {
 }
 
 /* Gallery Section */
-.gallery-section {
-    flex: 2;
+.feedback-container {
+    width: 810px;
+    height: 486px;
+    padding: 18px 87px;
+    position: absolute;
+    left: 796px;
+    top: 343px;
+    background: #D9D9D9;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.gallery-title {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+.feedback-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+.feedback-title {
+    width: 170px;
+    height: 40px;
+    background: #7B8F86;
+    border-radius: 30px;
+    color: #1C4633;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.gallery-item {
-    background-color: #D9D9D9;
-    height: 150px;
-    border-radius: 10px;
+.feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.feedback-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 115px;
+}
+
+.feedback-box {
+    width: 258px;
+    height: 141px;
+    position: relative;
+    background: #AEACAC;
+    border-radius: 15px;
+}
+
+.rating-stars {
+    width: 139px;
+    height: 27px;
+    position: absolute;
+    top: 105px;
+    left: 14px;
+    display: flex;
+    gap: 6px;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background: #B2822B;
+    border-radius: 1px;
+    border: 1px #B2822B solid;
+}
+
+.rating-value {
+    width: 31px;
+    color: #1C4633;
+    font-size: 18px;
+    font-family: Bodoni Moda;
+    font-weight: 800;
+    position: absolute;
+    top: 105px;
+    left: 155px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background: #1C4633;
+    border-radius: 9999px;
+    position: absolute;
+    top: 11px;
+    left: 14px;
+}
+
+.feedback-name {
+    position: absolute;
+    top: 87px;
+    left: 16px;
+    color: #1C4633;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.feedback-line {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 23px;
+    left: 26px;
+    border: 2px #DADADA solid;
+}
+
+.feedback-line::before {
+    content: "";
+    width: 36px;
+    height: 13.5px;
+    position: absolute;
+    top: 22.5px;
+    left: 0px;
+    border: 2px #DADADA solid;
+}
+
+.feedback-line::after {
+    content: "";
+    width: 13.5px;
+    height: 13.5px;
+    position: absolute;
+    top: 0px;
+    left: 11.25px;
+    border: 2px #DADADA solid;
 }
 
 /* Footer */
