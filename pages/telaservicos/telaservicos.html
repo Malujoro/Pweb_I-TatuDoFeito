@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços</title>
+    <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <a href="#" class="menu-item">Sobre nós</a>
-            <a href="#" class="menu-item">Serviços</a>
-            <a href="#" class="menu-item">Login</a>
-        </div>
+        <div id="header-placeholder" class="header"></div>
 
         <div class="section-title">
             Qual serviço você está precisando?
@@ -45,20 +42,21 @@
             </div>
         </div>
 
-        <div class="footer">
-            <div><h4>Para mais informações entre em contato conosco</h4></div>
-            <div class="contacts">
-                <h3>Telefones</h3>
-                <span>(89) 98809-1281</span>
-                <span>(89) 98809-1282</span>
-            </div>
-            <div class="contacts">
-                <h3>Emails</h3>
-                <span>email1@hotmail.com</span>
-                <span>email2@gmail.com</span>
-            </div>
-            <div><h4>Siga-nos no Instagram para ficar por dentro das novidades</h4></div>
-        </div>
+        <div id="footer-placeholder" class="footer"></div>
     </div>
+
+    <script>
+        fetch('../../assets/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        fetch('../../assets/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
