@@ -9,6 +9,9 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garantir que a altura mínima ocupe a tela toda */
 }
 
 /* Header */
@@ -45,204 +48,148 @@ body {
     flex-wrap: wrap;
     padding: 20px;
     gap: 30px;
+    flex: 1; /* Garante que o conteúdo ocupe o espaço restante */
 }
 
-/* Div principal com borda */
+/* Profile Card */
 .profile-card {
+    background-color: #ffffff;
     border-radius: 10px;
-    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 20px;
 }
 
-/* Div superior: Foto, nome e localização com altura reduzida */
 .profile-header {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 10px;
-    border: 1px solid #D9D9D9; /* Adiciona borda */
-    border-radius: 20px; /* Suaviza os cantos */
-    padding: 10px; /* Espaçamento interno */
-    background-color: #F7F7F7; /* Cor de fundo leve */
+    gap: 20px;
 }
 
-/* Ajuste do tamanho da foto */
 .profile-pic {
-    width: 60px; /* Reduz tamanho */
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background-color: #B5C1B8;
     border-radius: 50%;
 }
 
-/* Ajuste de altura das informações extras */
+.profile-header h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-header p {
+    font-size: 14px;
+    color: #666;
+}
+
 .profile-details {
-    margin-top: 10px;
-    border: 1px solid #D9D9D9; /* Adiciona borda */
-    border-radius: 20px; /* Suaviza os cantos */
-    padding: 25px; /* Espaçamento interno */
-    background-color: #F7F7F7; /* Cor de fundo leve */
+    margin-top: 20px;
 }
 
 .details-title {
-    border: 1px solid #D9D9D9; /* Adiciona borda */
-    border-radius: 20px; /* Suaviza os cantos */
-    padding: 10px; /* Espaçamento interno */
-    background-color: #6f9e63; /* Cor de fundo leve */
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 8px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-/* Botões de ação */
 .profile-actions {
     display: flex;
-    justify-content: start;
     gap: 10px;
-    margin-top: 10px;
 }
 
 .action-button {
-    background: #D9D9D9;
+    background-color: #1C4633;
+    color: #fff;
     border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-/* Gallery Section */
+/* Feedback Section */
 .feedback-container {
-    width: 810px;
-    height: 486px;
-    padding: 18px 87px;
-    position: absolute;
-    left: 796px;
-    top: 343px;
-    background: #D9D9D9;
-    border-radius: 30px;
+    flex: 2;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap; /* Permite que os feedbacks se ajustem à largura disponível */
+    gap: 20px; /* Espaçamento entre os feedbacks */
 }
 
 .feedback-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .feedback-title {
-    width: 170px;
-    height: 40px;
-    background: #7B8F86;
-    border-radius: 30px;
-    color: #1C4633;
-    font-size: 25px;
-    font-family: Poppins;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
 }
 
 .feedback-list {
     display: flex;
-    flex-direction: column;
-    gap: 42px;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
+    gap: 20px; /* Espaçamento entre os feedbacks */
+    justify-content: flex-start; /* Alinha os feedbacks à esquerda */
 }
 
 .feedback-item {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F7F7F7;
+    border: 1px solid #D9D9D9;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 115px;
+    gap: 15px;
+    flex-basis: 30%; /* Define que cada feedback ocupará 30% da largura */
+    box-sizing: border-box;
 }
 
+/* Feedback Box */
 .feedback-box {
-    width: 258px;
-    height: 141px;
-    position: relative;
-    background: #AEACAC;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
 }
 
+/* Rating Stars */
 .rating-stars {
-    width: 139px;
-    height: 27px;
-    position: absolute;
-    top: 105px;
-    left: 14px;
     display: flex;
-    gap: 6px;
+    gap: 5px;
 }
 
 .star {
     width: 20px;
     height: 20px;
-    background: #B2822B;
-    border-radius: 1px;
-    border: 1px #B2822B solid;
+    background-color: #FFD700;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
-.rating-value {
-    width: 31px;
-    color: #1C4633;
-    font-size: 18px;
-    font-family: Bodoni Moda;
-    font-weight: 800;
-    position: absolute;
-    top: 105px;
-    left: 155px;
-}
-
+/* Avatar */
 .avatar {
-    width: 60px;
-    height: 60px;
-    background: #1C4633;
-    border-radius: 9999px;
-    position: absolute;
-    top: 11px;
-    left: 14px;
+    width: 40px;
+    height: 40px;
+    background-color: #B5C1B8;
+    border-radius: 50%;
 }
 
+/* Feedback Name */
 .feedback-name {
-    position: absolute;
-    top: 87px;
-    left: 16px;
-    color: #1C4633;
-    font-size: 15px;
-    font-family: Poppins;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: bold;
 }
 
+/* Feedback Line */
 .feedback-line {
-    width: 36px;
-    height: 36px;
-    position: absolute;
-    top: 23px;
-    left: 26px;
-    border: 2px #DADADA solid;
-}
-
-.feedback-line::before {
-    content: "";
-    width: 36px;
-    height: 13.5px;
-    position: absolute;
-    top: 22.5px;
-    left: 0px;
-    border: 2px #DADADA solid;
-}
-
-.feedback-line::after {
-    content: "";
-    width: 13.5px;
-    height: 13.5px;
-    position: absolute;
-    top: 0px;
-    left: 11.25px;
-    border: 2px #DADADA solid;
+    width: 100%;
+    height: 1px;
+    background-color: #D9D9D9;
 }
 
 /* Footer */
@@ -250,7 +197,7 @@ body {
     background-color: #E8E7E7;
     text-align: center;
     padding: 20px;
-    margin-top: 120px;
+    margin-top: auto; /* Faz o rodapé ficar fixado no fundo da página */
 }
 
 .footer a {
