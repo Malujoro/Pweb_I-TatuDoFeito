@@ -16,16 +16,18 @@ h2, h3 {
     justify-content: flex-end;
     background: #D9D9D9;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: #1C4633;
+    background-color: #1C4633CC;
     border-radius: 25px;
     padding: 5px 10px;
     width: 35px;
-    margin-right: 20px;
+    justify-content: space-between;
 }
 
 .search-input {
@@ -56,10 +58,11 @@ h2, h3 {
 .navigation {
     display: flex;
     gap: 20px;
+    justify-content: flex-end;
 }
 
 .nav-button {
-    background: #1C4633;
+    background: #1C4633CC;
     color: #FFFFFF;
     border: none;
     padding: 10px 20px;
@@ -106,7 +109,7 @@ h2, h3 {
 .profile-avatar {
     width: 120px;
     height: 120px;
-    background: #1C463380;
+    background: #1C463380; 
     border-radius: 50%;
 }
 
@@ -114,11 +117,28 @@ h2, h3 {
     display: flex;
     gap: 10px;
     align-items: center;
-    color: #B2822B;
 }
 
 .profile-info h2 {
+    color: #1C4633;
+    font-size: 20px;
     margin-bottom: 5px;
+}
+
+.profile-info p {
+    color: #1C4633; 
+    font-size: 16px;
+}
+
+.rating .stars {
+    color: #B2822B; 
+    font-size: 16px; 
+}
+
+.rating .score {
+    color: #1C4633;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .custom-icon {
@@ -158,23 +178,30 @@ h2, h3 {
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
     width: 100%;
     max-width: 500px;
-    flex-shrink: 1;
 }
 
-.info-form {
-    margin-bottom: 20px;
+.info-block {
+    background: #E8E7E7;
+    border: 1px solid #E8E7E7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-textarea, input {
-    width: 100%;
-    margin: 5px 0 15px;
-    padding: 10px;
-    border: 1px solid #E8E8E8;
-    border-radius: 5px;
-    resize: none;
+.info-block h4 {
+    font-size: 18px; 
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #1C4633;
+}
+
+.info-block .info-text {
+    font-size: 14px; 
+    color: #555555;
+    line-height: 1.6;
 }
 
 .social-icons {
@@ -189,7 +216,7 @@ textarea, input {
 .icon {
     width: 50px;
     height: 50px;
-    background: #1C4633;
+    background: #1C463380;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -210,8 +237,8 @@ textarea, input {
 
 .service-button {
     width: 50%;
-    background: #1C4633;
-    color: #FFFFFF;
+    background: #1C463380;
+    color: #1C4633;
     border: none;
     padding: 10px 20px;
     border-radius: 30px;
@@ -221,6 +248,7 @@ textarea, input {
     width: auto;
 }
 
+/* Services section */
 .services-section {
     width: 100%;
     max-width: 500px;
@@ -263,6 +291,13 @@ textarea, input {
     transform: scale(1.1);
 }
 
+.payment-options h3 {
+    color: #1C4633;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 /* Seção de serviços */
 .services-list {
     background: #D9D9D9;
@@ -289,8 +324,10 @@ textarea, input {
 /* Footer */
 .footer {
     background: #D9D9D9;
+    color: #1C4633;
     text-align: center;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .footer-info {
@@ -299,15 +336,24 @@ textarea, input {
     margin-top: 10px;
 }
 
+.phone-number, .email-address {
+    display: block; 
+    margin-bottom: 5px; 
+    color: #1C4633;
+}
+
 .highlight {
     color: #1C4633;
     font-weight: bold;
 }
 
 /* Media Queries para Responsividade */
-
-/* Para telas menores que 1024px (Tablets e telas médias) */
 @media (max-width: 1024px) {
+    .header {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
     .main-content {
         flex-direction: column;
         align-items: center;
@@ -318,7 +364,7 @@ textarea, input {
     .payment-options,
     .services-list {
         width: 80%;
-        max-width: none; /* Permite que o bloco ocupe 100% do espaço disponível */
+        max-width: none;
     }
 
     .social-icons {
@@ -345,22 +391,7 @@ textarea, input {
     }
 }
 
-/* Para telas menores que 768px (Celulares) */
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .search-bar {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .navigation {
-        flex-direction: column;
-    }
-
     .social-icons {
         justify-content: center;
         gap: 10px;
@@ -393,5 +424,13 @@ textarea, input {
 
     .services-list ul {
         padding-left: 20px;
+    }
+}
+
+@media (max-width: 490px) {
+
+    .navigation {
+        flex-direction: column;
+        align-items: flex-end; 
     }
 }
