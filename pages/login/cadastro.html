@@ -12,20 +12,28 @@
 <body>
     <div class="container">
         <div class="form-wrapper">
-            <h1>Bem-vindo(a)!</h1>
-            <h2>Sentimos sua falta.</h2>
+            <h1>Ficamos felizes</h1>
+            <h2>em ter você por aqui.</h2>
             <form action="../home/home.html" method="POST">
                 <div class="form-field">
-                    <input type="text" id="username" name="username" placeholder="Usuário" required>
+                    <input type="text" id="name" name="name" placeholder="Nome" required>
+                </div>
+                <div class="form-field">
+                    <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" required>
+                </div>
+                <div class="form-field">
+                    <input type="tel" id="telephone" name="telephone" placeholder="Telefone" required>
+                </div>
+                <div class="form-field">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-field">
                     <input type="password" id="password" name="password" placeholder="Senha" required>
                 </div>
-                <div class="forgot-password">Esqueceu sua senha?</div>
                 <button type="submit" class="login-button">Login</button>
             </form>
             <div class="signup-link">
-                Não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
+                Já tem uma conta? <a href="login.html">Fazer login</a>
             </div>
         </div>
     </div>
