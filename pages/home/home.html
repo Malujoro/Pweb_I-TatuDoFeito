@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@275&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="style.css">
@@ -14,10 +14,68 @@
     <div class="container">
         <div id="header-placeholder" class="header"></div>
 
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-item">
+                    <img src="../telaservicos/images/image1.png" alt="Serviços Domésticos">
+                    <h2>Serviços Domésticos</h2>
+                    <p>Encontre profissionais qualificados para limpeza, jardinagem, pequenos reparos e muito mais.</p>
+                    <a href="#domesticos" class="btn">Explorar Serviços</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="../telaservicos/images/image2.png" alt="Reformas e Construção">
+                    <h2>Reformas e Construção</h2>
+                    <p>Conecte-se com pedreiros, pintores, eletricistas e outros profissionais da construção.</p>
+                    <a href="#reformas" class="btn">Encontrar Profissionais</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="../telaservicos/images/image3.png" alt="Tecnologia e Informática">
+                    <h2>Tecnologia e Informática</h2>
+                    <p>Suporte técnico, configuração de computadores, manutenção de smartphones e muito mais.</p>
+                    <a href="#tecnologia" class="btn">Ver Especialistas</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="../telaservicos/images/image4.png" alt="Saúde e Bem-estar">
+                    <h2>Saúde e Bem-estar</h2>
+                    <p>Encontre profissionais como massoterapeutas, nutricionistas, personal trainers e outros.</p>
+                    <a href="#saude" class="btn">Consultar Profissionais</a>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button onclick="changeSlide(-1)">&#10094;</button>
+                <button onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+
         <div id="footer-placeholder" class="footer"></div>
     </div>
 
     <script src="../../js/loadHeaderFooter.js"></script>
+    <script>
+        let currentSlide = 0;
+        const carousel = document.getElementById('carousel');
+        const slides = document.querySelectorAll('.carousel-item');
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        // Autoplay functionality
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+    </script>
+
 </body>
 
 </html>
