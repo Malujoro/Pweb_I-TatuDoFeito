@@ -2,6 +2,12 @@ a {
     text-decoration: none;
 }
 
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #E8E7E7;
+}
+
 .header {
     position: fixed;
     top: 0;

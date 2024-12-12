@@ -11,6 +11,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    padding-top: 80px; /* Ajuste o valor para corresponder à altura do header */
 }
 
 body {
@@ -38,7 +39,7 @@ body {
     flex-grow: 1;
     flex-direction: row;
     position: relative;
-    top: 30px;
+    /* top: 30px; */
     left: 82px;
     bottom: 50px;
     display: flex;

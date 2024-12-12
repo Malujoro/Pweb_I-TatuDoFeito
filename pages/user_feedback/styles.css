@@ -12,25 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Garantir que a altura mínima ocupe a tela toda */
-}
-
-/* Header */
-.header {
-    background-color: #E8E7E7;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-logo .logo {
-    width: 50px;
-    height: 50px;
-}
-
-.header-nav {
-    display: flex;
-    gap: 20px;
+    overflow-y: scroll;
+    padding-top: 80px; /* Ajuste o valor para corresponder à altura do header */
 }
 
 .nav-link {
@@ -224,17 +207,4 @@ body {
     width: 100%;
     height: 1px;
     background-color: #D9D9D9;
-}
-
-/* Footer */
-.footer {
-    background-color: #E8E7E7;
-    text-align: center;
-    padding: 20px;
-    margin-top: auto; /* Faz o rodapé ficar fixado no fundo da página */
-}
-
-.footer a {
-    color: #36594C;
-    text-decoration: none;
 }
