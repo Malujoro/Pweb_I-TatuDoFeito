@@ -5,18 +5,21 @@
 }
 
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #E8E7E7;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    flex-grow: 1;
 }
 
 .content-wrapper {
