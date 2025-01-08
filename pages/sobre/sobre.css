@@ -1,3 +1,13 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-title, .main-text {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +15,11 @@
 }
 
 body {
-    overflow-x: hidden;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
@@ -27,6 +37,7 @@ body {
     width: 100%;
     padding: 100px;
     text-align: center;
+    align-items: center;
 }
 
 .main-title {
@@ -41,8 +52,100 @@ body {
     margin: 20px auto;
     color: black;
     text-align: justify;
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 1100px;
+    line-height: 1.5;
+}
+
+/*talvez precise alterar font-size: em telas menores*/
+/*.main-text {
+    margin: 20px auto;
+    color: black;
+    text-align: justify;
     font-size: 20px;
     font-weight: 400;
-    max-width: 800px;
-    line-height: 1.5;
+    max-width: 1100px;
+    line-height: 1.6;
+}*/
+
+
+
+.icon {
+    align-self: center;
+    width: 11%;
+    margin-top: -2.5%;
+}
+
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+/* .icon {
+    width: 11%;
+    height: auto;
+    margin-top: -2.5%;
+    margin-left: auto; 
+    margin-right: 10%; 
+} */
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .main-title {
+        font-size: 40px; /* Tamanho da fonte ajustado */
+    }
+
+    .main-text {
+        font-size: 18px; /* Tamanho da fonte menor */
+        padding: 0 20px; /* Espaço lateral em telas médias */
+    }
+
+    .icon {
+        width: 30%; /* Ícone um pouco maior em tablets */
+
+        margin-right: 5%; /* Ajusta o espaçamento */
+    }
+}
+
+@media (max-width: 650px) {
+    .content-wrapper {
+        padding: 30px;
+    }
+
+    .main-title {
+        font-size: 35px; /* Reduz título em telas menores */
+    }
+
+    .main-text {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .icon {
+        width: 15%; /* Ícone maior em telas pequenas */
+        margin-top: 10px; /* Remove margem negativa */
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-wrapper {
+        padding: 20px;
+    }
+
+    .main-title {
+        font-size: 30px; /* Ajusta para celulares */
+    }
+
+    .main-text {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .icon {
+        width: 0%; /* Ícone maior em celulares */
+        margin-right: 2%; /* Espaço ajustado */
+    }
 }
