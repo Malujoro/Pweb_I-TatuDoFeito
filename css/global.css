@@ -36,7 +36,7 @@ body {
     margin-left: auto;
 }
 
-.header .home-button {
+.header .home-logo {
     height: 51px;
     margin: 0 10px;
     display: flex;
@@ -105,16 +105,16 @@ body {
 }
 
 .email-icon {
-    width: 20px;
-    height: 16px;
-    background: #426354;
+    width: 21px;
+    height: 17px;
+    fill: #426354;
 }
 
 .phone-icon {
-    width: 12px;
-    height: 20px;
-    background: black;
-    border: 1px #426354 solid;
+    width: 13px;
+    height: 21px;
+    fill: black;
+    stroke:#426354
 }
 
 .contact-text {
