@@ -1,6 +1,7 @@
 a {
     text-decoration: none;
     color: inherit;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -11,7 +12,6 @@ body {
     padding: 0;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
     margin: 0;
@@ -69,18 +69,22 @@ body {
     font-weight: 275;
     padding: 0 20px;
     text-align: center;
-    transition: all 0.3s ease; /* Suaviza alterações */
+    transition: all 0.3s ease;
+    /* Suaviza alterações */
 }
 
 /* Esconder "Sobre Nós" em telas menores */
 @media (max-width: 768px) {
     .header .menu-item.sobre-nos {
-        display: none; /* Esconde o botão 'Sobre Nós' */
+        display: none;
+        /* Esconde o botão 'Sobre Nós' */
     }
 
     .header .menu-item {
-        height: 45px; /* Altura reduzida */
-        font-size: 20px; /* Fonte menor */
+        height: 45px;
+        /* Altura reduzida */
+        font-size: 20px;
+        /* Fonte menor */
         padding: 0 15px;
         margin: 0 8px;
     }
@@ -89,7 +93,8 @@ body {
 /* Esconder também em telas muito pequenas (mobile) */
 @media (max-width: 480px) {
     .header .menu-item {
-        height: 40px; /* Altura menor */
+        height: 40px;
+        /* Altura menor */
         font-size: 18px;
         padding: 0 10px;
         margin: 0 5px;
