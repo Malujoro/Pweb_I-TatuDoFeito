@@ -18,29 +18,27 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
 .card {
     width: 690px;
     height: 810px;
-    padding: 50px 95px;
+    padding: 50px 26px;
     background: #E8E7E7;
     border-radius: 30px;
     border: 7px solid #B2822B;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    margin: 40px 0;
 }
 
 .content {
-    width: 499px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 80px;
 }
 
 .titulo {
@@ -69,26 +67,12 @@ body {
 
 }
 
-.logo {
-    width: 187px;
-    height: 80px;
+.image-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.logo-image {
-    transform: rotate(180deg);
-}
-
-.logo-text {
-    width: 87px;
-    height: 11px;
-    color: #1C4633;
-    font-family: 'Aboreto', cursive;
-    font-size: 12px;
-    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .form-section {
@@ -97,7 +81,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 69px;
+    gap: 45px;
 }
 
 .input-field {
@@ -161,80 +145,43 @@ body {
     opacity: 0.9;
 }
 
-
-
-
-.container {
-flex: 1;
-width: 100%;
-padding: 80px 21px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin: auto;
-position: relative;
-z-index: 1;
-}
-
-.card {
-width: 690px;
-max-width: 100%;
-padding: 50px 26px;
-background: #E8E7E7;
-border-radius: 30px;
-border: 7px solid #B2822B;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-gap: 10px;
-margin: 40px 0;
-}
-
-.content {
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-gap: 80px;
-}
-
-.header, .footer {
-position: fixed;
-width: 100%;
-z-index: 2;
+.header,
+.footer {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 .header {
-top: 0;
+    top: 0;
 }
 
 .footer {
-bottom: 0;
+    bottom: 0;
 }
 
 @media (max-height: 900px) {
-.container {
-    padding: 100px 21px;
-}
+    .container {
+        padding: 100px 21px;
+    }
 
-.card {
-    transform: scale(0.9);
-}
+    .card {
+        transform: scale(0.9);
+    }
 }
 
 @media (max-width: 768px) {
-.card {
-    width: 100%;
-    padding: 30px 15px;
-}
+    .card {
+        width: 100%;
+        padding: 30px 15px;
+    }
 
-.titulo h1, .titulo h2 {
-    font-size: 32px;
-}
+    .titulo h1,
+    .titulo h2 {
+        font-size: 32px;
+    }
 
-.content {
-    gap: 40px;
-}
+    .content {
+        gap: 40px;
+    }
 }

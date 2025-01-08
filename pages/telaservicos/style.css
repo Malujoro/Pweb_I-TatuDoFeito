@@ -10,12 +10,13 @@ body {
 
 .container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 105vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
 }
+
 
 .section-title {
     margin-top: 20px;

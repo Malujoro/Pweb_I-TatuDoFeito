@@ -1,7 +1,6 @@
 a {
     text-decoration: none;
     color: inherit;
-    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -39,21 +38,6 @@ body {
 .header .menu-container {
     display: flex;
     margin-left: auto;
-}
-
-.logo-img svg {
-    width: 136;
-    height: 65;
-}
-
-.logo-title {
-    width: 87px;
-    height: 11px;
-    color: #1C4633;
-    font-size: 12px;
-    font-family: Aboreto;
-    font-weight: 400;
-    word-wrap: break-word;
 }
 
 .header .menu-item {

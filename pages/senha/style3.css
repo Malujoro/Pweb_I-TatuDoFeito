@@ -26,7 +26,7 @@ body {
     align-items: center;
     position: relative;
     z-index: 1;
-    padding: 120px 20px; /* Ajuste de espaçamento para evitar sobreposição */
+    /* padding: 120px 20px; Ajuste de espaçamento para evitar sobreposição */
 }
 
 .card {
@@ -39,7 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* Espaço entre elementos internos */
+    /* gap: 20px; Espaço entre elementos internos */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionado sombra para destacar o card */
 }
 
@@ -49,7 +49,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
 }
 
 .titulo {
@@ -67,25 +66,12 @@ body {
     font-weight: 600;
 }
 
-.logo {
-    width: 100%;
-    max-width: 200px; /* Responsivo */
+.image-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.logo-image {
-    transform: rotate(180deg);
-}
-
-.logo-text {
-    color: #1C4633;
-    font-family: 'Aboreto', cursive;
-    font-size: 14px; /* Ajuste no tamanho */
-    font-weight: 400;
-    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .form-section {
