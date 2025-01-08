@@ -58,6 +58,7 @@ body {
     color: rgba(28, 70, 51, 0.80);
     font-size: 40px;
     font-weight: 600;
+    text-align: center;
 }
 
 .titulo h2 {
@@ -66,6 +67,7 @@ body {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+
 }
 
 .logo {
@@ -158,4 +160,82 @@ body {
 /* Hover states */
 .buttons button:hover {
     opacity: 0.9;
+}
+
+
+
+
+.container {
+flex: 1;
+width: 100%;
+padding: 80px 21px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: auto;
+position: relative;
+z-index: 1;
+}
+
+.card {
+width: 690px;
+max-width: 100%;
+padding: 50px 26px;
+background: #E8E7E7;
+border-radius: 30px;
+border: 7px solid #B2822B;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 10px;
+margin: 40px 0;
+}
+
+.content {
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 80px;
+}
+
+.header, .footer {
+position: fixed;
+width: 100%;
+z-index: 2;
+}
+
+.header {
+top: 0;
+}
+
+.footer {
+bottom: 0;
+}
+
+@media (max-height: 900px) {
+.container {
+    padding: 100px 21px;
+}
+
+.card {
+    transform: scale(0.9);
+}
+}
+
+@media (max-width: 768px) {
+.card {
+    width: 100%;
+    padding: 30px 15px;
+}
+
+.titulo h1, .titulo h2 {
+    font-size: 32px;
+}
+
+.content {
+    gap: 40px;
+}
 }
