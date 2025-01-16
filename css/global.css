@@ -33,6 +33,7 @@ body {
     background: #D9D9D9;
     padding: 14px 37px;
     z-index: 10;
+    box-sizing: border-box;
 }
 
 .header .menu-container {
