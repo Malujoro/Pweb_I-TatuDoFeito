@@ -121,6 +121,7 @@ h2, h3 {
     transition: background 0.3s;
 }
 
+
 .edit-button:hover {
     background: #1C4633AA;
     color: white;
