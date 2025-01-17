@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Serviços</title>
     <link rel="stylesheet" href="../../css/global.css">
-    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="historico.css">
     </head>
 <body>
     <div id="header-placeholder" class="header"></div>
@@ -92,107 +92,36 @@
                     <div class="icon">
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.9102 29.625C11.1727 29.625 7.91616 28.3862 5.14066 25.9086C2.36516 23.431 0.77374 20.3365 0.366406 16.625H3.69766C4.07682 19.4417 5.3297 21.7708 7.45628 23.6125C9.58286 25.4542 12.0675 26.375 14.9102 26.375C18.0789 26.375 20.7672 25.2716 22.975 23.0649C25.1829 20.8581 26.2862 18.1698 26.2852 15C26.2841 11.8302 25.1807 9.14242 22.975 6.93675C20.7694 4.73108 18.0811 3.62717 14.9102 3.625C13.0414 3.625 11.2945 4.05833 9.66953 4.925C8.04453 5.79167 6.67682 6.98333 5.56641 8.5H10.0352V11.75H0.285156V2H3.53516V5.81875C4.91641 4.08542 6.60261 2.74479 8.59378 1.79688C10.5849 0.848958 12.6904 0.375 14.9102 0.375C16.9414 0.375 18.8443 0.761208 20.6188 1.53363C22.3933 2.30604 23.937 3.34821 25.25 4.66013C26.563 5.97204 27.6057 7.51579 28.3782 9.29138C29.1506 11.067 29.5362 12.9698 29.5352 15C29.5341 17.0302 29.1484 18.933 28.3782 20.7086C27.6079 22.4842 26.5652 24.028 25.25 25.3399C23.9349 26.6518 22.3911 27.6945 20.6188 28.468C18.8464 29.2415 16.9436 29.6272 14.9102 29.625ZM19.4602 21.825L13.2852 15.65V6.875H16.5352V14.35L21.7352 19.55L19.4602 21.825Z" fill="white"/>
-                        </svg>
+                          </svg>
                     </div>
                 </div>
             </div>
             <div class="service-but">
-                <button class="service-button"><strong>logout</strong></button>
+                <button class="service-button"><strong>Logout</strong></button>
             </div>
         </div>
         <!-- SEGUNDO GRANDE BLOCO -->
-        <div class="services-section">   
-            <div class="galeria-section">
-                <h3>Galeria</h3>
-                <div class="image-blocks">
-                    <div class="image-block">
-                        <img src="./images/sala.png" alt="Imagem 1" class="gallery-image">
+        <div class="services-section">
+            <div class="container">
+                <div class="solicitations-wrapper">
+                    <div class="solicitations-title">
+                        <div>Solicitações</div>
                     </div>
-                    <div class="image-block">
-                        <img src="./images/corta_ferro.png" alt="Imagem 1" class="gallery-image">
+                    <div class="solicitations-list">
+                        <div class="solicitation-item">
+                            <div class="solicitation-text">Solicitação do dia 06/01/2025 de João</div>
+                            <div class="solicitation-status">
+                                <div>[Em andamento]</div>
+                                <div class="cancel-button">
+                                    <div>Cancelar</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="image-block">
-                        <img src="./images/pintura.png" alt="Imagem 3" class="gallery-image">
-                    </div>
-                    <div class="image-block">
-                        
-                    </div>
+                    <div class="solicitation-simple">Solicitação do dia 01/01/2025 de Fulano</div>
+                    <div class="solicitation-simple">Solicitação do dia 29/12/2024 de João</div>
+                    <div class="solicitation-simple">Solicitação do dia 20/12/2024 de Maria</div>
                 </div>
-            </div>
-            <div class="feedbacks-section">
-                <h3>Avaliações dos Clientes</h3>
-                <div class="feedback-list">
-                    <div class="feedback-item">
-                        <div class="feedback-avatar">
-                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58" fill="none">
-                                <path d="M1 50C1 46.287 2.475 42.726 5.1005 40.1005C7.72601 37.475 11.287 36 15 36H43C46.713 36 50.274 37.475 52.8995 40.1005C55.525 42.726 57 46.287 57 50C57 51.8565 56.2625 53.637 54.9497 54.9497C53.637 56.2625 51.8565 57 50 57H8C6.14348 57 4.36301 56.2625 3.05025 54.9497C1.7375 53.637 1 51.8565 1 50Z" 
-                                      class="icon-path" />
-                                <path d="M29 22C34.799 22 39.5 17.299 39.5 11.5C39.5 5.70101 34.799 1 29 1C23.201 1 18.5 5.70101 18.5 11.5C18.5 17.299 23.201 22 29 22Z" 
-                                      class="icon-path-circle" />
-                            </svg>
-                        </div>
-                        <div class="feedback-content">
-                            <div class="feedback-header">
-                                <span class="feedback-name">Maria Silva</span>
-                                <span class="feedback-rating">★★★★★</span>
-                            </div>
-                            <p class="feedback-text">Excelente profissional! Fez um trabalho impecável na reforma do meu banheiro. Muito pontual e organizado.</p>
-                        </div>
-                    </div>
-            
-                    <div class="feedback-item">
-                        <div class="feedback-avatar">
-                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58" fill="none">
-                                <path d="M1 50C1 46.287 2.475 42.726 5.1005 40.1005C7.72601 37.475 11.287 36 15 36H43C46.713 36 50.274 37.475 52.8995 40.1005C55.525 42.726 57 46.287 57 50C57 51.8565 56.2625 53.637 54.9497 54.9497C53.637 56.2625 51.8565 57 50 57H8C6.14348 57 4.36301 56.2625 3.05025 54.9497C1.7375 53.637 1 51.8565 1 50Z" 
-                                      class="icon-path" />
-                                <path d="M29 22C34.799 22 39.5 17.299 39.5 11.5C39.5 5.70101 34.799 1 29 1C23.201 1 18.5 5.70101 18.5 11.5C18.5 17.299 23.201 22 29 22Z" 
-                                      class="icon-path-circle" />
-                            </svg>
-                        </div>
-                        <div class="feedback-content">
-                            <div class="feedback-header">
-                                <span class="feedback-name">João Santos</span>
-                                <span class="feedback-rating">★★★★☆</span>
-                            </div>
-                            <p class="feedback-text">Ótimo serviço na instalação elétrica. Profissional muito atencioso e cuidadoso com os detalhes.</p>
-                        </div>
-                    </div>
-            
-                    <div class="feedback-item">
-                        <div class="feedback-avatar">
-                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58" fill="none">
-                                <path d="M1 50C1 46.287 2.475 42.726 5.1005 40.1005C7.72601 37.475 11.287 36 15 36H43C46.713 36 50.274 37.475 52.8995 40.1005C55.525 42.726 57 46.287 57 50C57 51.8565 56.2625 53.637 54.9497 54.9497C53.637 56.2625 51.8565 57 50 57H8C6.14348 57 4.36301 56.2625 3.05025 54.9497C1.7375 53.637 1 51.8565 1 50Z" 
-                                      class="icon-path" />
-                                <path d="M29 22C34.799 22 39.5 17.299 39.5 11.5C39.5 5.70101 34.799 1 29 1C23.201 1 18.5 5.70101 18.5 11.5C18.5 17.299 23.201 22 29 22Z" 
-                                      class="icon-path-circle" />
-                            </svg>
-                        </div>
-                        <div class="feedback-content">
-                            <div class="feedback-header">
-                                <span class="feedback-name">Ana Oliveira</span>
-                                <span class="feedback-rating">★★★★★</span>
-                            </div>
-                            <p class="feedback-text">Contratei para pintura da casa e o resultado ficou perfeito. Recomendo muito!</p>
-                        </div>
-                    </div>
-            
-                    <div class="feedback-item">
-                        <div class="feedback-avatar">
-                            <svg width="30" height="30" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M29 22C34.799 22 39.5 17.299 39.5 11.5C39.5 5.70101 34.799 1 29 1C23.201 1 18.5 5.70101 18.5 11.5C18.5 17.299 23.201 22 29 22Z" 
-                                      stroke="#DADADA" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <div class="feedback-content">
-                            <div class="feedback-header">
-                                <span class="feedback-name">Carlos Mendes</span>
-                                <span class="feedback-rating">★★★★☆</span>
-                            </div>
-                            <p class="feedback-text">Serviço de qualidade na manutenção do ar condicionado. Profissional pontual e preparado.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
         </div>
     </main>

@@ -1,0 +1,108 @@
+.edit-form-container {
+    width: 100%;
+    height: 100%;
+    padding: 13px 22px;
+    background: #1C4633;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-form-wrapper {
+    width: 501px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 17px;
+}
+
+.form-fields {
+    width: 100%;
+    height: 508px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.form-field {
+    width: 100%;
+    height: 58px;
+    padding: 10px 13px;
+    background: #E8E7E7;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    position: relative; /* Necessário para posicionar os rótulos */
+}
+
+.about-field {
+    height: 133px;
+    align-items: flex-start;
+}
+
+.field-text {
+    color: #1C4633;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    position: absolute; /* Posiciona o texto no início do campo */
+    top: 10px;
+    left: 13px;
+    pointer-events: none; /* Permite clicar diretamente no campo */
+}
+
+.field-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #1C4633;
+    font-weight: 400;
+    padding-top: 20px; /* Ajusta o texto para não sobrepor o rótulo */
+    box-sizing: border-box;
+}
+
+.field-input:focus {
+    outline: none;
+}
+
+textarea.field-input {
+    resize: none; /* Remove a capacidade de redimensionar o campo */
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.form-button {
+    width: 201px;
+    height: 40px;
+    padding: 0 16px;
+    background: #7B8F86;
+    border-radius: 30px;
+    border: none;
+    color: #1C4633;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-button:hover {
+    background: #6b7e73; /* Adiciona um efeito de hover */
+}

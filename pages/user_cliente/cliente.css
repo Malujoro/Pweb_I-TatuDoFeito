@@ -109,6 +109,23 @@ h2, h3 {
     stroke-width: 2;
 }
 
+.edit-button {
+    background: #1C463380;
+    color: #1C4633;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: background 0.3s;
+}
+
+.edit-button:hover {
+    background: #1C4633AA;
+    color: white;
+}
+
 /* Info Section */
 .info-section {
     background: #D9D9D9;
@@ -185,6 +202,123 @@ h2, h3 {
     cursor: pointer;
     width: auto;
 }
+
+/* Solicitation Styles  #D9D9D9 */
+.container {
+    background: #D9D9D9;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    flex-shrink: 1;
+    margin-right: auto;
+}
+
+.solicitations-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 27px;
+}
+
+.solicitations-title {
+    width: 170px;
+    height: 40px;
+    padding: 1px 25px;
+    background: #7B8F86;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.solicitations-title div {
+    color: #1C4633;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.solicitations-list {
+    width: 100%;
+    height: 101px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 42px;
+}
+
+.solicitation-item {
+    width: 100%;
+    height: 101px;
+    padding: 10px 13px;
+    background: #E8E7E7;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 86px;
+}
+
+.solicitation-text {
+    color: #1C4633;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.solicitation-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.solicitation-status div {
+    color: #1C4633;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.cancel-button {
+    padding: 1px 8px;
+    background: #7B8F86;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancel-button div {
+    color: #1C4633;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.solicitation-simple {
+    width: 100%;
+    height: 58px;
+    padding: 10px 13px;
+    background: #E8E7E7;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: #1C4633;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
 
 @media (max-width: 768px) {
     .social-icons {
