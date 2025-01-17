@@ -58,7 +58,7 @@ body {
 /* Imagens do carrossel */
 .carousel-item img {
     width: 100%;
-    height: 95%;
+    height: 85%;
     object-fit: cover; /* Mantém proporção da imagem */
     margin: 0; /* Removido margin bottom */
 }
