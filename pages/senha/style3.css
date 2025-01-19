@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     background: #E8E7E7;
     min-height: 100vh;
     display: flex;
@@ -104,12 +103,12 @@ body {
     border: none;
     color: white;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 275;
     text-align: center;
 }
 
 .input-field input::placeholder {
-    color: rgba(255, 255, 255, 0.8); /* Placeholder com opacidade */
+    color: white;
 }
 
 .input-field input:focus {

@@ -1,7 +1,6 @@
 /* Global Styles */
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
     background-color: #E8E7E7;
 }
 
@@ -115,10 +114,11 @@ h2, h3 {
     border: none;
     padding: 3px 6px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     margin-top: 18px;
     transition: background 0.3s;
+    font-weight: bold;
 }
 
 
@@ -199,9 +199,10 @@ h2, h3 {
     padding: 10px 20px;
     border-radius: 30px;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 25px;
     cursor: pointer;
     width: auto;
+    font-weight: bold;
 }
 
 /* Solicitation Styles  #D9D9D9 */
@@ -241,7 +242,6 @@ h2, h3 {
 .solicitations-title div {
     color: #1C4633;
     font-size: 25px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
@@ -256,21 +256,18 @@ h2, h3 {
 }
 
 .solicitation-item {
-    width: 100%;
-    height: 101px;
     padding: 10px 13px;
     background: #E8E7E7;
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 86px;
+    gap: 20px;
 }
 
 .solicitation-text {
     color: #1C4633;
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
@@ -285,7 +282,6 @@ h2, h3 {
 .solicitation-status div {
     color: #1C4633;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
@@ -301,13 +297,10 @@ h2, h3 {
 .cancel-button div {
     color: #1C4633;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
 .solicitation-simple {
-    width: 100%;
-    height: 58px;
     padding: 10px 13px;
     background: #E8E7E7;
     border-radius: 30px;
@@ -316,7 +309,6 @@ h2, h3 {
     align-items: flex-end;
     color: #1C4633;
     font-size: 25px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
